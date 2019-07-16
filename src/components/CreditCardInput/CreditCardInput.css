@@ -1,0 +1,160 @@
+@media only screen and (max-width: 600px) {
+    .mobile {
+        margin: 0 auto auto auto !important;
+    }
+}
+
+/* CREDIT CARD BACKGROUND*/
+
+.card {
+    width: 320px;
+    height: 190px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective:600px;
+    margin: auto;
+}
+
+.card-bg {
+    padding: 18px;
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    display: inline-block;
+    width: 352px;
+    height: 209px;
+    background-image: url(''), linear-gradient(to bottom, #292929, #1a1a1a);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    
+    -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* CREDIT CARD NUMBER FORM */
+
+.checkout-btn{
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    background: linear-gradient(to right, #bac6cf 0%, #b2a099 100%); 
+}
+
+.input-number {
+    display: block;
+    width: 100%;
+    word-spacing: 4px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    outline: none;
+
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.number-area {
+    width: 100%;
+    float: left;
+}
+
+/* CREDIT CARD INPUT DATE */
+
+.date-area {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.date-input {
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: -4px;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+/* CREDIT CARD CVV FORM */
+
+.code-area {
+    width: 25%;
+    float: left;
+    margin-right: 20px;
+}
+
+.code-input {
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: none;
+}
+
+/* CREDIT CARD FORM */
+
+.card-name {
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+    visibility: hidden;
+}
+
+.error-msg {
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #e64857;
+    letter-spacing: 1px;
+    visibility: hidden;
+    margin: 0;
+}
+
+.card-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #757575;
+    letter-spacing: 1px;
+}
+
+.world-label {
+    float: right;
+}
+
+.invalid-input {
+    border-color: #e64857 !important;
+    padding-right: calc(1.5em);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center right calc(0.375em + 0.1875rem);
+    background-size: calc(1em) calc(1em);
+}
+
+.card-flag {
+    visibility: hidden;
+    position: absolute;
+}
+
+.visible {
+    visibility: visible;
+}
+
+::placeholder{
+    color: #575757;
+}
